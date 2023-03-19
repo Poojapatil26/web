@@ -1,77 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Valentina Ice cream - Home</title>
+    <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Flavors</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="hero-text">
-          <h1>Welcome to Valentina Icecream</h1>
-          <p>Indulge in our delicious ice cream flavors made with natural ingredients.</p>
-          <button>Explore Our Flavors</button>
-        </div>
-      </section>
-      <section class="about">
-        <div class="about-text">
-          <h2>Our Story</h2>
-          <p>Valentina Icecream was founded by two best friends who wanted to share their love for ice cream with the world. Our ice cream is made with natural ingredients and is always hand-crafted in small batches to ensure the highest quality. We believe that ice cream should be enjoyed as a treat, but it should also be made with ingredients you can trust.</p>
-          <button>Learn More</button>
-        </div>
-        <img src="C:\Users\A\Desktop\icecream shop.jpg" alt="Valentina Icecream Shop"style="width:500px;height:300px;">
-        >
-        
-      </section>
-      <section class="flavors">
-        <h2>Our Flavors</h2>
-        <div class="flavors-grid">
-          <div class="flavor">
-            <img src="C:\Users\A\Desktop\strawberry.jpg" alt="Strawberry Icecream"style="width:500px;height:300px;">
-            
-            <h3>Strawberry</h3>
-            <p>Our strawberry ice cream is made with fresh, juicy strawberries and sweet cream. It's the perfect balance of sweet and tart.</p>
-          </div>
-          <div class="flavor">
-            <img src="C:\Users\A\Desktop\chocolate.jpg" alt="Chocolate Icecream"style="width:500px;height:300px;">
-            
-            <h3>Chocolate</h3>
-            <p>Our chocolate ice cream is made with rich, dark cocoa and creamy milk. It's the perfect indulgence for chocolate lovers.</p>
-          </div>
-          <div class="flavor">
-            <img src="C:\Users\A\Desktop\vanilla.jpg" alt="Vanilla Icecream"style="width:500px;height:300px;">
-            
-            <h3>Vanilla</h3>
-            <p>Our vanilla ice cream is made with real vanilla beans and fresh cream. It's a classic flavor that never goes out of style.</p>
-          </div>
-        </div>
-        <button>View All Flavors</button>
-      </section>
-      <section class="contact">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <button>Send Message</button>
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright © Valentina Icecream</p>
-    </footer>
+    <div class="calculator">
+      <input type="text" id="result" disabled>
+      <button onclick="getResult('1')">1</button>
+      <button onclick="getResult('2')">2</button>
+      <button onclick="getResult('3')">3</button>
+      <button onclick="clearResult()">C</button>
+      <button onclick="getResult('/')">/</button>
+      <button onclick="getResult('4')">4</button>
+      <button onclick="getResult('5')">5</button>
+      <button onclick="getResult('6')">6</button>
+      <button onclick="getResult('*')">*</button>
+      <button onclick="getResult('-')">-</button>
+      <button onclick="getResult('7')">7</button>
+      <button onclick="getResult('8')">8</button>
+      <button onclick="getResult('9')">9</button>
+      <button onclick="getResult('+')">+</button>
+      <button onclick="getResult('=')">=</button>
+      <button onclick="getResult('0')">0</button>
+      <button onclick="getResult('.')">.</button>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
